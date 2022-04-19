@@ -32,7 +32,5 @@ public class NoOfDigits {
         while(m.find()) {
             System.out.println(m.start());
         }
-
-
-}
+    }
 }

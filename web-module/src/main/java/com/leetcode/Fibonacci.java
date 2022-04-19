@@ -13,9 +13,5 @@ public class Fibonacci {
             arr[i] = arr[i-1]+arr[i-2];
             System.out.print("," + arr[i]);
         });
-        IntStream.range(0, 9).forEach(i -> {
-            arr[i] = arr[i-1]+arr[i-2];
-            System.out.print("," + arr[i]);
-        });
     }
 }

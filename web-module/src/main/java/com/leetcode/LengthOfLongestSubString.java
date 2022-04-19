@@ -17,14 +17,14 @@ public class LengthOfLongestSubString {
             }
         }
         System.out.println("res :: " + res);
-        System.out.println(" lenght :: " + res.length());
+        System.out.println(" length :: " + res.length());
         return res.length();
     }
 
     private boolean hasUniqueChars(String tempSubs) {
         Set<String> res = new TreeSet<>();
         for (int i = 0; i < tempSubs. length(); i++) {
-            if(res.add(tempSubs.substring(i, i+1))){
+            if (res.add(tempSubs.substring(i, i+1))){
             } else {
                 return false;
             }

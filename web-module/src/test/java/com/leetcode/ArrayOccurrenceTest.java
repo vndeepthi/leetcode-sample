@@ -8,7 +8,7 @@ public class ArrayOccurrenceTest {
         assert result == 3;
     }
 
-    @//Expect an exception
+    //Expect an exception
     public void test_Occurrence_Without_Duplicate(){
         ArrayOccurrence arrayOccurrence = new ArrayOccurrence();
         int result = arrayOccurrence.occurrence(new int[]{1, 4, 5, 7, 8});
