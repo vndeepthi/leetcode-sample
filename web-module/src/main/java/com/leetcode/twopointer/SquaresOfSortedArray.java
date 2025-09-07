@@ -10,7 +10,13 @@ public class SquaresOfSortedArray {
 
     public static int[] sortedSquares(int[] nums) {
         int left = 0;
-        while (nums[left] < 0 ) {
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
+        if (nums == null || nums.length == 1) {
+            return new int[]{nums[0] * nums[0]};
+        }
+        while (left < nums.length - 1 && nums[left + 1] < 0 ) {
             left++;
         }
         int right = left + 1;
@@ -27,7 +33,7 @@ public class SquaresOfSortedArray {
                 left--;
             }
         }
-        while (left >=0 ) {
+        while (left >=0 && left < nums.length) {
             result[resultIndex++] = nums[left] * nums[left];
             left--;
         }
@@ -39,8 +45,10 @@ public class SquaresOfSortedArray {
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(sortedSquares(new int[]{-4,-1,0,3,10})));
-        //System.out.println(Arrays.toString(sortedSquares(new int[]{-7,-3,2,3,11})));
+        //System.out.println(Arrays.toString(sortedSquares(new int[]{-4,-1,0,3,10})));
+        //System.out.println(Arrays.toString(sortedSquares(new int[]{-5,-3,-2,-1})));
+        System.out.println(Arrays.toString(sortedSquares(new int[]{-1,2,2})));
+
         //System.out.println(Arrays.toString(sortedSquares(new int[]{-1,0, 1})));
     }
 }
