@@ -1,0 +1,10 @@
+*.class
+*.log
+/.idea/*
+.idea/libraries
+.idea/*
+*.iml
+
+web-module
+/web-module/target/
+/web-module/target/classes
