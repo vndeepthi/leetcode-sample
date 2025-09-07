@@ -2,7 +2,7 @@
 *.log
 /.idea/*
 .idea/libraries
-.idea
+.idea/*
 *.iml
 
 web-module
