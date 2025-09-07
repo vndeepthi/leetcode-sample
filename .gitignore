@@ -5,6 +5,7 @@
 .idea/*
 *.iml
 
-web-module
+web-module/target/classes/*
+web-module/target/*
 /web-module/target/
 /web-module/target/classes
