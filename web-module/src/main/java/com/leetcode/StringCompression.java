@@ -38,11 +38,11 @@ public class StringCompression {
     public static void main(String[] args) {
         System.out.println(compressFull("stripe.com/payments/checkout/customer.john.doe"));
         System.out.println(compressFull("www.api.stripe.com/checkout"));
-        System.out.println(compressFull(null));
+       // System.out.println(compressFull(null));
     }
 
     private static String compressFull(final String input){
-        if (input == null || input.isBlank() || input.isEmpty()){
+        if (input == null || input.isEmpty()){
             throw new IllegalArgumentException("input string is null");
         }
         StringCompression sc = new StringCompression();

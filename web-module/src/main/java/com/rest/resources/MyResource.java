@@ -1,4 +1,4 @@
-package com.rest.resources;
+/*package com.rest.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -17,4 +17,4 @@ public class MyResource {
         System.out.println("ewrwkenrkwnerkwnerknwkr");
           return "I'm the response bbbbbbbbbbbbbbbbbbbbbbb";
     }
-}
+}*/
